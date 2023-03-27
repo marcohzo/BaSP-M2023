@@ -14,17 +14,21 @@
     </header>
     <nav>
       <h3>Menu</h3>
-      <img src="../assets/image/Icon.png" alt="navbar icon" />      
+      <img src="../assets/image/Icon.png" alt="navbar icon" />
       <a href="#">HOME</a>
       <a href="#">SIGN UP</a>
       <a href="#">LOG IN</a>
-      <a href="#">INFO</a>      
+      <a href="#">INFO</a>
       <div>
         <h3>CONTACT US</h3>
         <div>
           <div>
             <img src="../assets/image/email.png" alt="email icon" />
-            <p>Email:<a href="mailto:information@untitled.tld">information@untitled.tld</a></p>
+            <p>
+              Email:<a href="mailto:information@untitled.tld"
+                >information@untitled.tld</a
+              >
+            </p>
           </div>
           <div>
             <img src="../assets/image/tel.png" alt="tel icon" />
@@ -52,8 +56,10 @@
       </section>
       <div id="functions">
         <article id="appointment">
-          <img src="../assets/image/calendar.png" alt="Make an appointment" />
-          <h3>Make an appointment</h3>
+          <header>
+            <img src="../assets/image/calendar.png" alt="Make an appointment" />
+            <h3>Make an appointment</h3>
+          </header>
           <p>
             Choose the membership plan that fits your lifestyle and fitness
             goals. From basic to premium, we have options for every budget and
@@ -61,8 +67,10 @@
           </p>
         </article>
         <article id="our-memberships">
-          <img src="../assets/image/membership.png" alt="Our memberships" />
-          <h3>Our memberships</h3>
+          <header>
+            <img src="../assets/image/membership.png" alt="Our memberships" />
+            <h3>Our memberships</h3>
+          </header>
           <p>
             Choose the membership plan that fits your lifestyle and fitness
             goals. From basic to premium, we have options for every budget and
@@ -70,8 +78,10 @@
           </p>
         </article>
         <article id="become-member">
-          <img src="../assets/image/member.png" alt="Become a Member" />
-          <h3>Become a Member</h3>
+          <header>
+            <img src="../assets/image/member.png" alt="Become a Member" />
+            <h3>Become a Member</h3>
+          </header>
           <p>
             Join our fitness community and take advantage of all the perks of
             being a member.We offer a range of benefits to help you reach your
@@ -79,8 +89,10 @@
           </p>
         </article>
         <article id="suggestions">
-          <img src="../assets/image/suggestions.png" alt="Suggestions" />
-          <h3>Suggestions</h3>
+          <header>
+            <img src="../assets/image/suggestions.png" alt="Suggestions" />
+            <h3>Suggestions</h3>
+          </header>
           <p>
             We're always looking for ways to improve our gym experience. Have a
             suggestion? We want to hear from you! Share your feedback with us
@@ -88,44 +100,52 @@
           </p>
         </article>
       </div>
-      <form id="form">
+      <section id="form">
         <h2>You have questions, ask away and get your answers</h2>
-        <input type="text" id="name" name="name" placeholder="Name" required />
-        <input
-          type="text"
-          id="surname"
-          name="surname"
-          placeholder="Surname"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email address"
-          required
-        />
-        <select id="motive" name="motive" required>
-          <option value="">Select a motive</option>
-          <option value="memberships and costs">
-            I want to know about memberships and costs.
-          </option>
-          <option value="submit a suggestion/enquiry">
-            I want to submit a suggestion/enquiry.
-          </option>
-          <option value="submit a complain">
-            I want to submit a complain.
-          </option>
-        </select>
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          placeholder="Your message"
-          required
-        ></textarea>
-        <input type="submit" value="Clear" />
-        <input type="submit" value="Send" />
-      </form>
+        <form aria-label="Contact form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Surname"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <select id="motive" name="motive" required>
+            <option value="">Select a motive</option>
+            <option value="memberships and costs">
+              I want to know about memberships and costs.
+            </option>
+            <option value="submit a suggestion/enquiry">
+              I want to submit a suggestion/enquiry.
+            </option>
+            <option value="submit a complain">
+              I want to submit a complain.
+            </option>
+          </select>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="reset">Clear</button>
+          <button type="submit">Send</button>
+        </form>
+      </section>
       <section id="about-us">
         <h2>OUR HISTORY</h2>
         <p>
@@ -175,9 +195,15 @@
     <footer>
       <h3>Copyright © 2023 MegaRocket SA. All rights reserved.</h3>
       <div id="icons">
-        <img src="../assets/image/linkedin.png" alt="linkedin" />
-        <img src="../assets/image/facebook.png" alt="facebook" />
-        <img src="../assets/image/instagram.png" alt="instagram" />
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="../assets/image/linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../assets/image/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../assets/image/instagram.png" alt="instagram" />
+        </a>
       </div>
     </footer>
   </body>
