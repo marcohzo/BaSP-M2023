@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Mulish:wght@800&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MegaRocket</title>
+  </head>
+  <body>
+    <header class="bg-blue">
+      <h1>
+        <img src="../assets/image/logo.png" alt="MegaRocket" />
+      </h1>
+    </header>
+    <nav class="d-none">
+      <h3>Menu</h3>
+      <img src="../assets/image/Icon.png" alt="navbar icon" />
+      <a href="#">HOME</a>
+      <a href="#">SIGN UP</a>
+      <a href="#">LOG IN</a>
+      <a href="#">INFO</a>
+      <div>
+        <h3>CONTACT US</h3>
+        <div>
+          <div>
+            <img src="../assets/image/email.png" alt="email icon" />
+            <ul>
+              <li>
+                Email:<a href="mailto:information@untitled.tld">information@untitled.tld</a>
+              </li> 
+            </ul>
+          </div>
+          <div>
+            <img src="../assets/image/tel.png" alt="tel icon" />
+            <ul>
+              <li>
+                Phone: <a href="tel:(000)000-0000">(000) 000-0000</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="../assets/image/direction.png" alt="direction icon" />
+            <ul>
+              <li>
+                Direction: 1234 Somewhere Road #8254 Nashville, TN 00000-0000
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="welcome" class="bg-gray">
+        <h2>Get fit, get strong</h2>
+        <h3>Your Ultimate Gym Experience Starts Here!</h3>
+        <p>
+          We offer a wide range of fitness
+          classes and state-of-the-art equipment to help you reach your fitness
+          goals. <br> Our expert trainers are here to guide and motivate you every
+          step of the way. <br> Join us today and start your journey to a healthier,
+          stronger you!
+        </p>
+        <img src="../assets/image/welcome-image.png" alt="logo Rocket" class="section-icon"/>
+      </section>
+      <div id="functions"  class="bg-green">
+        <article id="appointment">
+          <header>
+            <img src="../assets/image/calendar.png" alt="Make an appointment" class="section-icon"/>
+            <h3 class="section-title">Make an appointment</h3>
+          </header>
+          <p>
+            Choose the membership plan that fits your lifestyle and fitness
+            goals. From basic to premium, we have options for every budget and
+            level of commitment
+          </p>
+        </article>
+        <article id="our-memberships">
+          <header>
+            <img src="../assets/image/membership.png" alt="Our memberships" class="section-icon"/>
+            <h3 class="section-title">Our memberships</h3>
+          </header>
+          <p>
+            Choose the membership plan that fits your lifestyle and fitness
+            goals. From basic to premium, we have options for every budget and
+            level of commitment.
+          </p>
+        </article>
+        <article id="become-member">
+          <header>
+            <img src="../assets/image/member.png" alt="Become a Member" class="section-icon"/>
+            <h3 class="section-title">Become a Member</h3>
+          </header>
+          <p>
+            Join our fitness community and take advantage of all the perks of
+            being a member.We offer a range of benefits to help you reach your
+            fitness potential.
+          </p>
+        </article>
+        <article id="suggestions">
+          <header>
+            <img src="../assets/image/suggestions.png" alt="Suggestions" />
+            <h3 class="section-title">Suggestions</h3>
+          </header>
+          <p>
+            We're always looking for ways to improve our gym experience. Have a
+            suggestion? We want to hear from you! Share your feedback with us
+            and help us make our gym the best it can be for our members
+          </p>
+        </article>
+      </div>
+      <section id="form">
+        <h2>You have questions, ask away and get your answers</h2>
+        <form aria-label="Contact form">
+          <div id="form-left">
+            <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+          type="text"
+          id="surname"
+          name="surname"
+          placeholder="Surname"
+          required
+          />
+          <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email address"
+          required
+          />
+          <select id="motive" name="motive" required>
+            <option value="">Select a motive</option>
+            <option value="memberships and costs">
+              I want to know about memberships and costs.
+            </option>
+            <option value="submit a suggestion/enquiry">
+              I want to submit a suggestion/enquiry.
+            </option>
+            <option value="submit a complain">
+              I want to submit a complain.
+            </option>
+          </select>
+        </div>
+        <div class="form-right">
+          <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Your message"
+          required
+          ></textarea>
+          <button type="reset">Clear</button>
+          <button type="submit">Send</button>
+        </div>
+        </form>
+      </section>
+      <section id="about-us" class="bg-green">
+        <h2>OUR HISTORY</h2>
+        <p>
+          Our journey began with a passion for fitness and a desire to create a
+          community where individuals could come together to achieve their
+          health and wellness goals. We wanted to build a gym that was more
+          t....
+        </p>
+      </section>
+      <div id="memberships" class="bg-gray">
+        <article id="our-activities">
+          <h2>Our activities</h2>
+          <ol>
+            <li>Crossfit</li>
+            <li>Spinning</li>
+            <li>Functional</li>
+            <li>Boxing</li>
+            <li>Weightlifting</li>
+          </ol>
+        </article>
+        <article id="black-membership">
+          <h2>Black Membership</h2>
+          <ul>
+            <li>Free access to BB class</li>
+            <li>Free access to classes without making appointment</li>
+            <li>Personalized follow up with personal trainer</li>
+            <li>Grid display</li>
+          </ul>
+        </article>
+        <article id="classic-membership">
+          <h2>Classic Membership</h2>
+          <ul>
+            <li>Free pass to weights room</li>
+            <li>Monitored by a personal coach</li>
+            <li>Displayed schedule</li>
+          </ul>
+        </article>
+        <article id="only-classes-member">
+          <h2>Only Classes Membership</h2>
+          <ul>
+            <li>Free pass to classes with prior appointment</li>
+            <li>Display schedule</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+    <footer class="bg-green">
+      <h3>Copyright &copy; 2023 MegaRocket SA. All rights reserved.</h3>
+      <div id="icons">
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="../assets/image/linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../assets/image/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../assets/image/instagram.png" alt="instagram" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

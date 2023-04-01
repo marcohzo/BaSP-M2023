@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  width: 100vw;
+
+}
+.bg-blue {
+  background-color: #373867;
+}
+.bg-gray {
+  background-color: #d9d9d9;
+}
+.bg-green {
+  background-color: #aace9b;
+  color: white;
+}
+.d-none {
+  display: none;
+}
+header {
+  height: 159px;
+  overflow: hidden;
+}
+header > h1 {
+  float: right;
+  width: 206px;
+  height: 42px;
+  margin: auto;
+}
+#welcome {
+  height: 471px;
+  overflow: hidden;
+}
+#welcome > h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+#welcome > h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+#welcome > img {
+  float: right;
+  width: 267px;
+  height: 236px;
+}
+#welcome p {
+  float: left;
+  font-size: 23px;
+  vertical-align: middle;
+
+}
+.section-icon {
+  width: 107px;
+  height: 107px;
+}
+.section-title {
+  width: 342.77px;
+  height: 67px;
+  background-color: #88a47c;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+#functions {
+  overflow: hidden;
+  height: 691px;
+}
+#functions > article {
+    width: 573px;
+    display: inline-block;
+}
+#functions article header {
+  overflow: hidden;
+}
+#functions article header .section-icon {
+  float: left;
+  margin-right: 10px;
+}
+ article > header {
+    height: auto;
+    font-weight: 30px;
+ }
+ #form {
+  height: 515px;
+  background-color: #35365c;
+  color: #fff;
+ }
+
+ #form h2 {
+  text-align: center;
+ }
+.form-left {
+
+}
+ .form-right {
+
+ }
+
+ #about-us {
+  height: 364px;
+ }
+
+ #membership {
+  height: 360px;
+ }
+
+ footer {
+  height: 133px;
+ }
