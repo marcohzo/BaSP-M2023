@@ -3,9 +3,8 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-body{
+body {
   width: 100vw;
-
 }
 .bg-blue {
   background-color: #373867;
@@ -20,17 +19,67 @@ body{
 .d-none {
   display: none;
 }
-header {
+nav {
+  width: 427px;
+  font-size: 32px;
+  background-color: #E5F2ED;
+}
+nav h3 {
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav > a {
+  display: block;
+  text-align: center;
+  height: 67px;
+}
+#contact-us, nav > a {
+  margin-top: 20px;
+  margin-left: 33px;
+  width: 370px;
+  text-align: center;
+  background-color: #51A884;
+  color: #fff;
+  border: 1px solid black;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 27px;
+}
+
+#contact-us, li, ul, a {
+  display: inline-block;
+  text-align: start;
+  font-size: 21px;
+}
+
+#contact-us img {
+  width: 65px;
+  height: 65px;
+}
+
+#contact-us div {
+  margin-top: 10px;
+}
+
+#contact-us {
+  margin-bottom: 20px;
+}
+
+#main-header {
   height: 159px;
   overflow: hidden;
 }
-header > h1 {
+#main-header img {
+  color: white;
+  filter: brightness(0%) invert(100%);
+  padding: 40px;
+}
+#main-header > h1 {
   float: right;
-  width: 206px;
-  height: 42px;
-  margin: auto;
-  margin-top: 49px;
-  margin-right: 40px;
+  margin: 10px 80px 0 0;
 }
 #welcome {
   height: 471px;
@@ -41,13 +90,13 @@ header > h1 {
   width: 1034px;
   display: inline-block;
 }
-#welcome  h2 {
+#welcome h2 {
   font-family: "Mulish", sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-#welcome  h3 {
+#welcome h3 {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -85,15 +134,16 @@ header > h1 {
   padding: 40px;
 }
 #functions article {
-    width: 573px;
-    display: inline-block;
-    margin-left: 80px;
+  width: 573px;
+  display: inline-block;
+  margin-left: 80px;
 }
 #functions article header {
   overflow: hidden;
 }
 #functions article img {
   display: inline-block;
+  vertical-align: middle;
 }
 #functions article header .section-icon {
   float: left;
@@ -102,39 +152,133 @@ header > h1 {
 #functions p {
   margin-left: 110px;
   width: 500px;
+  height: 230px;
   font-size: 30px;
 }
 
- article > header {
-    height: auto;
-    font-weight: 30px;
- }
- #form {
+article > header {
+  height: auto;
+  font-weight: 30px;
+}
+#form {
   height: 515px;
   background-color: #35365c;
   color: #fff;
- }
-
- #form h2 {
-  text-align: center;
- }
-.form-left {
-
 }
- .form-right {
 
- }
+#form h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 200;
+  padding-top: 20px;
+}
 
- #about-us {
+#about-us {
   height: 364px;
- }
+}
 
- #membership {
+#membership {
   height: 360px;
- }
+}
 
- footer {
+footer {
   height: 133px;
- }
+}
 
- 
+#form-left {
+  height: 266px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+#form input,
+select,
+option {
+  display: block;
+  width: 392.74px;
+  height: 37px;
+  color: #aace9b;
+}
+#form-left *:not(:first-child) {
+  margin-top: 22px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aace9b;
+}
+
+.form-right textarea {
+  display: inline-block;
+  width: 745px;
+  height: 174.76px;
+}
+form {
+  color: #aace9b;
+  margin-top: 60px;
+}
+
+.form-right {
+  display: inline-block;
+  margin-left: 100px;
+}
+#buttons {
+  display: block;
+  margin-top: 40px;
+}
+
+#buttons button {
+  width: 151px;
+  height: 70px;
+  border-radius: 30px;
+  background-color: #49A37B;
+  color: black;
+  font-size: 36px;  
+  margin-left: 147px;
+}
+
+#about-us {
+  font-size: 50px;
+  padding-left: 50px;
+  font-weight: 100;
+}
+
+#about-us p {
+  align-items: center;
+}
+
+#memberships > article {
+  display: inline-block;
+  width: 320px;
+  margin-left: 55px;
+  font-size: 24px;
+  vertical-align: top;
+}
+
+#memberships > article > h4 {
+  display: inline-block;
+  border: #34636e solid 1px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 100;
+  color: black;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+#icons {
+  display: inline-block;
+  float: right;
+  margin-right: 100px;
+  margin-top: 25px;
+}
+
+#icons a {
+  margin-right: 10px;
+}
