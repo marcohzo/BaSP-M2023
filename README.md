@@ -1,6 +1,6 @@
 # Become a Software Professional 2023
 
-## Week 2: Gym Management System Landing Page in HTML
+## Week 2: HTML
 
 In week 2, we continued our work on the gym management system by creating the landing page structure using HTML. The page includes the following content:
 
@@ -13,9 +13,13 @@ In week 2, we continued our work on the gym management system by creating the la
 - A membership plans section that provides subscription details.
 - Social media links to our company's profiles on LinkedIn, Facebook, and Instagram.
 
-### Conclusion
+## Week 3 CSS
 
-We've created a landing page structure using pure HTML. This page includes everything necessary to showcase the features of our gym management system to potential customers. In the coming weeks, we will continue to refine our design and functionality.
+In week 3, we continued to work on the landing page, this time focusing on styling it based on the Figma model we were provided with. 
+We worked with CSS to style the page, using classes, margins, background colors also installed custom fonts from Google to enhance the design. 
+We used the "pixel perfect" approach to ensure that our page matched the design precisely. 
+We did not use flexbox or grid, instead relying on tools such as display: inline-block to position elements. 
+It was important for us to use the 'px' unit of measurement.
 
 
 ## Author
