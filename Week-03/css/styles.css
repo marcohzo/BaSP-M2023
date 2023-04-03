@@ -16,99 +16,96 @@ body {
   background-color: #aace9b;
   color: white;
 }
-.d-none {
-  display: none;
-}
-nav {
-  width: 427px;
-  font-size: 32px;
-  background-color: #E5F2ED;
-}
-nav h3 {
+.t-center {
   text-align: center;
 }
-nav a {
+.d-inline-b {
+  display: inline-block;
+}
+.nav {
+  width: 427px;
+  font-size: 32px;
+  background-color: #e5f2ed;
+}
+.nav a {
   text-decoration: none;
   color: #fff;
 }
-nav > a {
+.nav > a {
   display: block;
-  text-align: center;
   height: 67px;
 }
-#contact-us, nav > a {
+.contact-us,
+nav > a {
   margin-top: 20px;
   margin-left: 33px;
   width: 370px;
-  text-align: center;
-  background-color: #51A884;
+  background-color: #51a884;
   color: #fff;
   border: 1px solid black;
   padding-top: 10px;
   box-sizing: border-box;
   font-size: 27px;
 }
-
-#contact-us, li, ul, a {
-  display: inline-block;
+.contact-us li,
+ul,
+a {
   text-align: start;
   font-size: 21px;
 }
-
-#contact-us img {
+.contact-us img {
   width: 65px;
   height: 65px;
 }
-
-#contact-us div {
-  margin-top: 10px;
+.contact-us div {
+  margin-top: 30px;
 }
-
-#contact-us {
+.contact-us div ul {
+  width: 80%;
+}
+.contact-us {
+  width: 370px;
+  height: 409px;
   margin-bottom: 20px;
 }
-
-#main-header {
+.main-header {
   height: 159px;
   overflow: hidden;
 }
-#main-header img {
-  color: white;
+.main-header img {
   filter: brightness(0%) invert(100%);
   padding: 40px;
 }
-#main-header > h1 {
+.main-header > h1 {
   float: right;
   margin: 10px 80px 0 0;
 }
-#welcome {
+.welcome {
   height: 471px;
   overflow: auto;
   padding: 50px;
 }
-#welcome div {
+.welcome div {
   width: 1034px;
-  display: inline-block;
 }
-#welcome h2 {
+.welcome h2 {
   font-family: "Mulish", sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-#welcome h3 {
+.welcome h3 {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-#welcome > img {
+.welcome > img {
   float: right;
   width: 267px;
   height: 236px;
   margin-top: 120px;
 }
-#welcome p {
-  display: inline;
+.welcome p {
   font-size: 23px;
   letter-spacing: 1px;
   line-height: 3.5;
@@ -123,168 +120,138 @@ nav > a {
   background-color: #88a47c;
   border-radius: 5px;
   border: 1px solid black;
-  text-align: center;
+  border-top: none;
   font-size: 30px;
   font-weight: 200;
-  display: inline-block;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 }
-#functions {
+.functions {
   overflow: hidden;
   height: 691px;
   padding: 40px;
 }
-#functions article {
-  width: 573px;
-  display: inline-block;
+.functions article {
+  width: 40%;
+  height: 50%;
   margin-left: 80px;
+  box-sizing: border-box;
+  vertical-align: top;
 }
-#functions article header {
+.functions article header {
   overflow: hidden;
+  margin-bottom: 10px;
 }
-#functions article img {
-  display: inline-block;
+.functions article img {
   vertical-align: middle;
 }
-#functions article header .section-icon {
+.functions article header .section-icon {
   margin-right: 10px;
 }
-#functions p {
+.functions p {
   margin-left: 110px;
-  width: 500px;
-  height: 230px;
   font-size: 30px;
 }
-
 article > header {
   height: auto;
   font-weight: 30px;
 }
-#form {
+.form {
   height: 515px;
-  background-color: #35365c;
   color: #fff;
 }
-
-#form h2 {
-  text-align: center;
+.form h2 {
   font-size: 60px;
   font-weight: 200;
   padding-top: 20px;
 }
-
-#about-us {
-  height: 364px;
-}
-
-#about-us h3 {
-  font-weight: 100;
-  font-size: 50px;
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
-
-#membership {
-  height: 360px;
-}
-
-footer {
-  height: 133px;
-}
-
-#form-left {
+.form-left {
   height: 266px;
-  display: inline-block;
   vertical-align: top;
   margin-left: 100px;
 }
-#form input,
+.form input,
 select,
 option {
   display: block;
   width: 392.74px;
   height: 37px;
-  color: #aace9b;
 }
-#form-left *:not(:first-child) {
+.form-left *:not(:first-child) {
   margin-top: 22px;
 }
-
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder,
+.form input,
+select,
+option,
+form {
   color: #aace9b;
 }
-
 .form-right textarea {
-  display: inline-block;
   width: 745px;
   height: 174.76px;
 }
 form {
-  color: #aace9b;
   margin-top: 60px;
 }
-
 .form-right {
-  display: inline-block;
   margin-left: 100px;
 }
-#buttons {
+.buttons {
   display: block;
   margin-top: 40px;
 }
-
-#buttons button {
+.buttons button {
   width: 151px;
   height: 70px;
   border-radius: 30px;
-  background-color: #49A37B;
+  background-color: #49a37b;
   color: black;
-  font-size: 36px;  
+  font-size: 36px;
   margin-left: 147px;
 }
-
-#about-us {
+.about-us {
+  height: 364px;
   font-size: 50px;
   padding-left: 50px;
   font-weight: 100;
 }
-
-#about-us p {
-  align-items: center;
+.about-us h2 {
+  font-weight: 100;
+  font-size: 50px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
-
-#memberships > article {
-  display: inline-block;
+.memberships {
+  height: 360px;
+}
+.memberships > article {
   width: 320px;
   margin-left: 55px;
   font-size: 24px;
   vertical-align: top;
 }
-
-#memberships > article > h4 {
-  display: inline-block;
+.memberships > article > h4 {
   border: #34636e solid 1px;
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+footer {
+  height: 133px;
+}
 footer h3 {
-  display: inline-block;
   font-size: 32px;
   font-weight: 100;
   color: black;
   margin-top: 50px;
   margin-left: 70px;
 }
-
-#icons {
-  display: inline-block;
+.icons {
   float: right;
   margin-right: 100px;
   margin-top: 25px;
 }
-
-#icons a {
+.icons a {
   margin-right: 10px;
 }
