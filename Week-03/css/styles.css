@@ -227,7 +227,7 @@ form {
 }
 .memberships > article {
   width: 320px;
-  margin-left: 55px;
+  margin: 50px 0px 0px 55px;
   font-size: 24px;
   vertical-align: top;
 }
