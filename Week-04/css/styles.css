@@ -245,9 +245,16 @@ form {
 .memberships > article > h4 {
 /*   border: #34636e solid 1px; */
   font-weight: 500;
+  font-size: 30px;
+}
+.memberships > article > h4 {
+  font-size: 20px;
 }
 .memberships > article li {
   font-size: 16px;
+}
+.memberships > article > h4 > img {
+  display: none;
 }
 /*---FOOTER---*/
 
@@ -271,4 +278,93 @@ footer h3 {
 }
 .icons {
   align-self: center;
+}
+
+/* END MOBILE VERSION */
+
+/* START TABLET VERSION */
+
+@media (min-width: 601px) {
+  /*HEADER*/
+  .main-header {
+    height: 169px;
+    padding: 0px 34px;
+  }
+  /*WELCOME*/
+  .welcome {
+    flex-direction: row;
+  }
+  .welcome > img {
+    width: 184px;
+    height: auto;
+  }
+  .welcome div {
+    text-align: start; 
+    width: 70%;
+  }
+  .welcome h2 {
+    font-size: 36px;
+}
+  .welcome h3 {
+    font-size: 28px;
+  }
+  /*FUNCTIONS*/
+  .functions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 17px;
+    gap: 30px;
+  } 
+  .functions p {
+    display: contents;
+    font-size: 23px;
+    line-height: 46px;
+  }
+  .functions article {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  .functions article header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+  .section-title {
+    width: 65%;
+    height: 52%;
+    font-size: 23px;
+  }
+  .section-icon {
+    width: 90px;
+    height: auto;
+  }
+
+  /*FORM*/
+  .form h2 {
+    padding-top: 18px;
+  }
+  .buttons {
+    gap: 140px;    
+  }
+
+  /*ABOUT US*/
+  .about-us h2 {
+    text-align: center;
+  }
+  .about-us p {
+    padding: 10px;
+  }
+  /*MEMBERSHIPS*/
+  .memberships > article h4 {
+    font-size: 26px;
+}
+  .memberships .our-activities h4{
+    font-size: 42px;
+  }
+  .memberships .our-activities li {
+    font-size: 40px;
+  }
 }
