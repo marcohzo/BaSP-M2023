@@ -21,6 +21,11 @@ We used the "pixel perfect" approach to ensure that our page matched the design 
 We did not use flexbox or grid, instead relying on tools such as display: inline-block to position elements. 
 It was important for us to use the 'px' unit of measurement.
 
+## Week 4 Responsive Design
+
+In week 4, we focused on making the page responsive and mobile-first using flexbox, media queries, and percentages.
+- We used breakpoints at 601px and 1024px to adjust the layout and content of the page for different screen sizes. By using media queries, we were able to apply different styles to the same elements based on the size of the viewport.
+- We also utilized flexbox to create a flexible and responsive layout that adapts to different screen sizes.
 
 ## Author
 - Marco Herazo
