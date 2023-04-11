@@ -173,6 +173,13 @@ form {
   gap: 19px;
   align-items: center;
 }
+textarea {
+  width: 312px;
+  height: 122px;
+}
+form {
+  margin-top: 60px;
+}
 .form {
   width: 100%;
   display: flex;
@@ -197,13 +204,7 @@ option,
 form {
   color: #aace9b;
 }
-textarea {
-  width: 312px;
-  height: 122px;
-}
-form {
-  margin-top: 60px;
-}
+
 .form-right {
   display: flex;
   flex-direction: column;
@@ -388,7 +389,8 @@ footer h3 {
 /* START DESKTOP VERSION */
 @media (min-width: 1024px) {
   main,
-  .main-header, footer {
+  .main-header,
+  footer {
     margin-left: 30%;
     width: 70%;
   }
@@ -505,7 +507,7 @@ footer h3 {
   }
   .form-right {
     width: 50%;
-    min-height: 442px;;
+    min-height: 442px;
     justify-content: flex-start;
   }
   textarea {
