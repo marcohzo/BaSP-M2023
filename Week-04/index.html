@@ -25,7 +25,7 @@
         <img src="../assets/image/logo.png" alt="MegaRocket"/>
       </h1>
     </header>
-    <nav class="d-inline-b nav">
+    <nav class="nav">
       <h3 class="t-center">Menu</h3>
       <a href="#" class="t-center">HOME</a>
       <a href="#" class="t-center">SIGN UP</a>
@@ -35,9 +35,9 @@
         <h3 class="t-center">CONTACT US</h3>
         <div>
           <img src="../assets/image/email.png" alt="email icon"/>
-          <ul class="d-inline-b">
-            <li class="d-inline-b">
-              <a class="d-inline-b" href="mailto:information@untitled.tld"
+          <ul>
+            <li>
+              <a href="mailto:information@untitled.tld"
                 >information@untitled.tld</a
               >
             </li>
@@ -45,23 +45,23 @@
         </div>
         <div>
           <img src="../assets/image/tel.png" alt="tel icon"/>
-          <ul class="d-inline-b">
-            <li class="d-inline-b">
-              <a class="d-inline-b" href="tel:(000)000-0000">(000) 000-0000</a>
+          <ul>
+            <li>
+              <a href="tel:(000)000-0000">(000) 000-0000</a>
             </li>
           </ul>
         </div>
         <div>
           <img src="../assets/image/direction.png" alt="direction icon" />
-          <ul class="d-inline-b">
-            <li class="d-inline-b">1234 Somewhere Road #8254 Nashville, TN 00000-0000</li>
+          <ul>
+            <li>1234 Somewhere Road #8254 Nashville, TN 00000-0000</li>
           </ul>
         </div>
       </div>
     </nav>
     <main>
       <section class="bg-gray welcome">
-        <div class="d-inline-b">
+        <div>
           <h2>Get fit, get strong</h2>
           <h3>Your Ultimate Gym Experience Starts Here!</h3>
           <p>
@@ -82,14 +82,14 @@
         />
       </section>
       <div class="bg-green functions">
-        <article class="d-inline-b">
+        <article>
           <header>
             <img
               src="../assets/image/calendar.png"
               alt="Make an appointment"
               class="section-icon"
             />
-            <h3 class="section-title t-center d-inline-b">
+            <h3 class="section-title t-center">
               Make an appointment
             </h3>
           </header>
@@ -99,14 +99,14 @@
             level of commitment
           </p>
         </article>
-        <article class="d-inline-b">
+        <article>
           <header>
             <img
               src="../assets/image/membership.png"
               alt="Our memberships"
               class="section-icon"
             />
-            <h3 class="section-title t-center d-inline-b">Our memberships</h3>
+            <h3 class="section-title t-center">Our memberships</h3>
           </header>
           <p>
             Choose the membership plan that fits your lifestyle and fitness
@@ -114,14 +114,14 @@
             level of commitment.
           </p>
         </article>
-        <article class="d-inline-b">
+        <article>
           <header>
             <img
               src="../assets/image/member.png"
               alt="Become a Member"
               class="section-icon"
             />
-            <h3 class="section-title t-center d-inline-b">Become a Member</h3>
+            <h3 class="section-title t-center">Become a Member</h3>
           </header>
           <p>
             Join our fitness community and take advantage of all the perks of
@@ -129,14 +129,14 @@
             fitness potential.
           </p>
         </article>
-        <article class="d-inline-b">
+        <article>
           <header>
             <img
               src="../assets/image/suggestions.png"
               alt="Suggestions"
               class="section-icon"
             />
-            <h3 class="section-title t-center d-inline-b">Suggestions</h3>
+            <h3 class="section-title t-center">Suggestions</h3>
           </header>
           <p>
             We're always looking for ways to improve our gym experience. Have a
@@ -150,45 +150,48 @@
           You have questions, ask away and get your answers
         </h2>
         <form aria-label="Contact form">
+          <div class="form-right">
+
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
             />
             <input
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Surname"
-              required
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Surname"
+            required
             />
             <input
-              type="email"
-              id="email"
+            type="email"
+            id="email"
               name="email"
               placeholder="Email address"
               required
-            />
-            <select id="motive" name="motive" required>
-              <option value="">Select a motive</option>
-              <option value="memberships and costs">
-                I want to know about memberships and costs.
-              </option>
-              <option value="submit a suggestion/enquiry">
-                I want to submit a suggestion/enquiry.
-              </option>
+              />
+              <select id="motive" name="motive" required>
+                <option value="">Select a motive</option>
+                <option value="memberships and costs">
+                  I want to know about memberships and costs.
+                </option>
+                <option value="submit a suggestion/enquiry">
+                  I want to submit a suggestion/enquiry.
+                </option>
               <option value="submit a complain">
                 I want to submit a complain.
               </option>
             </select>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              placeholder="Your message ..."
-              required
-              class="d-inline-b"
+          </div>
+          <div class="form-left">
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Your message ..."
+            required              
             ></textarea>
             <div class="buttons">
               <button type="reset">
@@ -200,11 +203,12 @@
                 Send
               </button>
             </div>
+          </div>
         </form>
       </section>
       <section class="bg-green about-us">
         <h2>OUR HISTORY</h2>
-        <p class="d-inline-b">
+        <p>
           Our journey began with a passion for fitness and a desire to create a
           community where individuals could come together to achieve their
           health and wellness goals. We wanted to build a gym that was more
@@ -240,7 +244,7 @@
           </ul>
         </article>
         <article>
-          <h4><img src="../assets/image/option1.png"> Classes Membership</h4>
+          <h4><img src="../assets/image/option1.png">Only Classes Membership</h4>
           <ul>
             <li>Free pass to classes with prior appointment</li>
             <li>Grid display</li>
