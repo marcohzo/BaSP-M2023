@@ -3,14 +3,14 @@ console.log('*** EXERCISE 5: FOR');
 console.log('Exercise 5.A');
 var newArr = ["Hola", "que", "tal", "como", "estas"]
 for(let i = 0; i < newArr.length; i++){
-    /* alert(newArr[i]); */
+    alert(newArr[i]);
 }
 // Iterar sobre un array y convertir la primera letra en mayuscula de cada palabra
 console.log('Exercise 5.B');
 for(let i = 0; i < newArr.length; i++){
     var word = newArr[i];
     var newWord = word.substring(0, 1).toUpperCase() + word.slice(1);
-    /* alert(newWord); */
+    alert(newWord);
 }
 //
 console.log('Exercise 5.C');
