@@ -245,7 +245,6 @@ form {
 .memberships {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 38px;
   padding: 21px 5px;
 }
@@ -253,16 +252,17 @@ form {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
-  max-width: 282px;
-}
-.memberships > article > h4 {
-  /*   border: #34636e solid 1px; */
-  font-weight: 500;
-  font-size: 30px;
 }
 .memberships > article > h4 {
   font-size: 20px;
+  text-align: center;
+}
+.memberships > article > h4 {
+  font-size: 20px;
+}
+.memberships ul,
+.memberships ol {
+  margin-left: 30%;
 }
 .memberships > article li {
   font-size: 16px;
@@ -283,6 +283,9 @@ footer h3 {
   font-size: 12px;
   font-weight: 100;
   color: black;
+}
+footer a {
+  text-decoration: none;
 }
 .icons img {
   height: 34px;
@@ -447,6 +450,7 @@ footer h3 {
   a {
     text-align: start;
     font-size: 21px;
+    text-decoration: none;
   }
   .contact-us img {
     width: 65px;
@@ -507,9 +511,11 @@ footer h3 {
   }
   .form-right {
     width: 50%;
-    min-height: 442px;
+    display: flex;
+    min-height: 483px;
     justify-content: flex-start;
-  }
+    gap: 42px;
+}
   textarea {
     width: 497px;
     height: 342px;
@@ -546,20 +552,18 @@ footer h3 {
   }
   /*---MEMBERSHIPS---*/
   .memberships > article {
-    display: flex;
-    gap: 12px;
-    min-width: 40%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin-top: 30px;
+    width: 38%;
   }
   .memberships {
     display: flex;
-    align-items: baseline;
     height: 627px;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+  }
+  .memberships ul,
+  .memberships ol {
+    margin-left: 0;
   }
   .memberships > article li,
   .memberships > article h4 {
