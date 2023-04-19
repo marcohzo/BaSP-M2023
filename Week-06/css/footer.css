@@ -1,0 +1,37 @@
+footer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+footer h3 {
+  font-size: 12px;
+  font-weight: 100;
+  color: black;
+}
+footer a {
+  text-decoration: none;
+}
+.icons img {
+  height: 34px;
+}
+.icons a {
+  margin-right: 10px;
+}
+.icons {
+  align-self: center;
+}
+@media (min-width: 1024px) {
+  footer {
+    height: 241px;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer h3 {
+    font-size: 32px;
+  }
+  footer .icons img {
+    height: 71px;
+  }
+}

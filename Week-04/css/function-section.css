@@ -1,3 +1,7 @@
+article > header {
+  height: auto;
+  font-weight: 30px;
+}
 .functions {
   display: flex;
   flex-direction: column;
@@ -31,10 +35,6 @@
 }
 .functions p {
   display: none;
-}
-article > header {
-  height: auto;
-  font-weight: 30px;
 }
 
 @media (min-width: 601px) {

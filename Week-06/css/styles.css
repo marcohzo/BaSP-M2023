@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100vw;
+}
+.bg-blue {
+  background-color: #373867;
+}
+.bg-gray {
+  background-color: #d9d9d9;
+}
+.bg-green {
+  background-color: #aace9b;
+  color: white;
+}
+.t-center {
+  text-align: center;
+}
