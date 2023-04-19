@@ -34,25 +34,18 @@ This week we focused on JavaScript and covered several topics. Each one had a co
 Here is a breakdown of the topics we covered:
 
 - ### 01 variables and operators
-In this exercise, we learned about variables and operators and practiced using them to perform basic mathematical operations.
 
 - ### 02 strings
-In this exercise, we learned about strings and practiced manipulating them using various string methods.
 
 - ### 03 arrays
-In this exercise, we learned about arrays and practiced manipulating them using various array methods.
 
 - ### 04 if else
-In this exercise, we learned about conditional statements and practiced using them to create more complex programs.
 
 - ### 05 for
-In this exercise, we learned about for loops and practiced using them to iterate over arrays and perform other tasks.
 
 - ### 06 functions
-In this exercise, we learned about functions and practiced creating and calling functions to perform specific tasks.
 
 - ### Responsive Design
-We applied this knowledge to the previous week's work and corrected any errors to ensure that our projects are both functional and visually appealing on all devices.
 
 ## Author
 - Marco Herazo
