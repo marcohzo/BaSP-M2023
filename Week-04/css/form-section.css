@@ -1,0 +1,119 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+}
+textarea {
+  width: 312px;
+  height: 122px;
+}
+form {
+  margin-top: 60px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.form h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.form input,
+select,
+option {
+  width: 312px;
+  height: 33px;
+}
+input::placeholder,
+textarea::placeholder,
+.form input,
+select,
+option,
+form {
+  color: #aace9b;
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.buttons button {
+  display: flex;
+  width: 90px;
+  height: 37px;
+  border-radius: 30px;
+  background-color: #49a37b;
+  color: black;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+}
+@media (min-width: 601px) {
+  .form h2 {
+    padding-top: 18px;
+  }
+  .buttons {
+    gap: 100px;
+    margin: 20px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  form {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  .form {
+    min-height: 766px;
+  }
+  .form h2 {
+    font-size: 60px;
+    font-weight: 100;
+  }
+  .form-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+  }
+  .form-right {
+    width: 50%;
+    display: flex;
+    min-height: 483px;
+    justify-content: flex-start;
+    gap: 42px;
+  }
+  textarea {
+    width: 497px;
+    height: 342px;
+    max-width: 90%;
+  }
+  .form input,
+  select,
+  option {
+    width: 393px;
+    height: 47px;
+    max-width: 90%;
+  }
+  .buttons {
+    justify-content: flex-start;
+    gap: 120px;
+  }
+  .buttons button {
+    width: 151px;
+    height: 70px;
+    font-size: 36px;
+    max-width: 30%;
+  }
+}
