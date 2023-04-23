@@ -4,7 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
     <title>Sign-up</title>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-blue main-header">
+      <img src="../assets/image/Icon.png" alt="navbar icon" />
+      <h1>
+        <img src="../assets/image/logo.png" alt="MegaRocket" />
+      </h1>
+    </header>
+    <main>
+      <section class="section-form">
+        <h2>Register</h2>
+        <form>
+          <div class="form-row">
+            <label for="name"
+              >Name:
+              <input type="text" id="name" />
+            </label>
+            <label for="lastName"
+              >Last name:
+              <input type="text" id="lastName" />
+            </label>
+            <label for="dni"
+              >DNI:
+              <input type="text" id="dni" />
+            </label>
+            <label for="dateOfBirth"
+              >Date of Birth:
+              <input type="text" id="dateOfBirth" />
+            </label>
+            <label for="email"
+              >Email:
+              <input type="text" id="email" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="zipCode"
+              >Zip code:
+              <input type="text" id="zipCode" />
+            </label>
+            <label for="telephone"
+              >Telephone:
+              <input type="text" id="telephone" />
+            </label>
+            <label for="address"
+              >Address:
+              <input type="text" id="address" />
+            </label>
+            <label for="password"
+              >Password:
+              <input type="text" id="password" />
+            </label>
+            <label for="repeatPassword"
+              >repeat your Password:
+              <input type="text" id="repeatPassword" />
+            </label>
+          </div>
+        </form>
+      </section>
+      <button class="btn-form" type="submit">Continue</button>
+    </main>
+  </body>
 </html>

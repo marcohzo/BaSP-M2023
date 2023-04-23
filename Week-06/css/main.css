@@ -246,6 +246,10 @@ form {
 }
 
 @media (min-width: 1024px) {
+  main {
+    margin-left: 30%;
+    width: 70%;
+  }
   .welcome {
     min-height: 567px;
   }

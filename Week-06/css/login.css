@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+}
+main {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-family: "Roboto", sans-serif;
+}
+form {
+  height: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 24%;
+  text-align: center;
+}
+form h2 {
+  color: #2c8008;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #2c8008;
+}
+button {
+  background-color: #aace9b;
+  width: 327px;
+  height: 48px;
+  color: #fff;
+  border: none;
+  margin-top: 2rem;
+}
