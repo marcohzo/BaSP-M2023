@@ -34,6 +34,7 @@ addInputValidation("password", "Invalid password", passwordInput);
 addInputValidation("password", "Invalid password", repeatPasswordInput);
 addInputValidation("locality", "Invalid locality", localityInput);
 addInputValidation("address", "Invalid address", addressInput);
+addInputValidation("date", "Invalid date", birthInput);
 
 function validateAlphanumeric(value) {
   let letter = false;
@@ -88,6 +89,16 @@ function clearError(input) {
     errorElement.remove();
   }
 }
+function validateDate(inputValue) {
+  const inputDate = new Date(inputValue);
+  const today = new Date();
+
+  if (inputDate > today) {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 function validateInput(input, validationType, errorMessage) {
   const value = input.value.trim();
@@ -123,6 +134,11 @@ function validateInput(input, validationType, errorMessage) {
   }
   if (validationType === "password") {
     if (!validateAlphanumeric(value) || value.length < 8) {
+      showError(input, errorMessage);
+    }
+  }
+  if (validationType === "date") {
+    if (true) {
       showError(input, errorMessage);
     }
   }
