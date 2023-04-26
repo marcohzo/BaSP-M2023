@@ -23,6 +23,7 @@ form {
 }
 form h2 {
   color: #2c8008;
+  align-self: center;
 }
 input {
   border: none;
@@ -44,4 +45,7 @@ button {
 }
 .back-btn {
   align-self: baseline;
+}
+.back-btn-a {
+  margin-right: 75%;
 }
