@@ -15,15 +15,16 @@ In week 2, we continued our work on the gym management system by creating the la
 
 ## Week 3: CSS
 
-In week 3, we continued to work on the landing page, this time focusing on styling it based on the Figma model we were provided with. 
-We worked with CSS to style the page, using classes, margins, background colors also installed custom fonts from Google to enhance the design. 
-We used the "pixel perfect" approach to ensure that our page matched the design precisely. 
-We did not use flexbox or grid, instead relying on tools such as display: inline-block to position elements. 
+In week 3, we continued to work on the landing page, this time focusing on styling it based on the Figma model we were provided with.
+We worked with CSS to style the page, using classes, margins, background colors also installed custom fonts from Google to enhance the design.
+We used the "pixel perfect" approach to ensure that our page matched the design precisely.
+We did not use flexbox or grid, instead relying on tools such as display: inline-block to position elements.
 It was important for us to use the 'px' unit of measurement.
 
 ## Week 4: Responsive Design
 
 In week 4, we focused on making the page responsive and mobile-first using flexbox, media queries, and percentages.
+
 - We used breakpoints at 601px and 1024px to adjust the layout and content of the page for different screen sizes. By using media queries, we were able to apply different styles to the same elements based on the size of the viewport.
 - We also utilized flexbox to create a flexible and responsive layout that adapts to different screen sizes.
 
@@ -47,5 +48,16 @@ Here is a breakdown of the topics we covered:
 
 - ### Responsive Design
 
+## Week 6: Form Validations with JavaScript
+
+In week 6, we learned how to create custom form validations using JavaScript methods, for loops, comparisons, if statements, among others. Some of the validations we created include:
+
+- Validation of text fields such as name, address, and postal code.
+- Validation of email and phone number fields.
+- Validation of date field with a specific format and future date restriction.
+- Implementation of customized error messages for each form field.
+- We also learned how to create a responsive design for the form using media queries and flexbox to adapt to different screen sizes.
+
 ## Author
+
 - Marco Herazo
