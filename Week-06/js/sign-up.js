@@ -89,15 +89,15 @@ function clearError(input) {
     errorElement.remove();
   }
 }
-function validateDate(inputValue) {
-  const inputDate = new Date(inputValue);
-  const today = new Date();
-
-  if (inputDate > today) {
-    return false;
-  } else {
-    return true;
-  }
+function validateDate(value) {
+  var currentDate = new Date();
+  var dateInput = value;
+  var date = dateInput.split("-");
+  var day = date[2];
+  var month = date[1];
+  var year = date[0];
+  var inputDate = new Date(year, month - 1, day);
+  return inputDate <= currentDate;
 }
 
 function validateInput(input, validationType, errorMessage) {
@@ -138,7 +138,7 @@ function validateInput(input, validationType, errorMessage) {
     }
   }
   if (validationType === "date") {
-    if (true) {
+    if (!validationDate(value)) {
       showError(input, errorMessage);
     }
   }
