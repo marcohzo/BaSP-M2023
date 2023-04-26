@@ -72,6 +72,9 @@ h2 {
 .error-message {
   color: red;
 }
+.back-btn {
+  align-self: baseline;
+}
 @media (min-width: 1024px) {
   form {
     flex-direction: row;

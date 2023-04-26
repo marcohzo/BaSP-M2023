@@ -42,3 +42,6 @@ button {
 .error-message {
   color: red;
 }
+.back-btn {
+  align-self: baseline;
+}
