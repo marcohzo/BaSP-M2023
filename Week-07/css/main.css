@@ -1,0 +1,357 @@
+article > header {
+  height: auto;
+  font-weight: 30px;
+}
+.welcome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome div {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.welcome h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.welcome h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.welcome > img {
+  width: 248.36px;
+  height: auto;
+}
+.welcome p {
+  font-size: 20px;
+}
+
+.functions {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+}
+.section-icon {
+  width: 107px;
+  height: 107px;
+}
+.section-title {
+  width: 342.77px;
+  height: 67px;
+  background-color: #88a47c;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: 200;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
+}
+.functions article {
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+.functions article header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.functions p {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+}
+textarea {
+  width: 312px;
+  height: 122px;
+}
+form {
+  margin-top: 60px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.form h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.form input,
+select,
+option {
+  width: 312px;
+  height: 33px;
+}
+input::placeholder,
+textarea::placeholder,
+.form input,
+select,
+option,
+form {
+  color: #aace9b;
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.buttons button {
+  display: flex;
+  width: 90px;
+  height: 37px;
+  border-radius: 30px;
+  background-color: #49a37b;
+  color: black;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  padding: 25px;
+}
+.about-us h2 {
+  font-weight: 100;
+  font-size: 50px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.memberships {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 21px 5px;
+}
+.memberships > article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.memberships > article > h4 {
+  font-size: 20px;
+  text-align: center;
+}
+.memberships > article > h4 {
+  font-size: 20px;
+}
+.memberships ul,
+.memberships ol {
+  margin-left: 30%;
+}
+.memberships > article li {
+  font-size: 16px;
+}
+.memberships > article > h4 > img {
+  display: none;
+}
+
+@media (min-width: 601px) {
+  .welcome {
+    flex-direction: row;
+  }
+  .welcome > img {
+    width: 184px;
+    height: auto;
+  }
+  .welcome div {
+    text-align: start;
+    width: 70%;
+  }
+  .welcome h2 {
+    font-size: 36px;
+  }
+  .welcome h3 {
+    font-size: 28px;
+  }
+  .functions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 17px;
+    gap: 30px;
+  }
+  .functions p {
+    display: contents;
+    font-size: 23px;
+    line-height: 46px;
+  }
+  .functions article {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  .functions article header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+  .section-title {
+    width: 65%;
+    height: 52%;
+    font-size: 23px;
+  }
+  .section-icon {
+    width: 90px;
+    height: auto;
+  }
+  .form h2 {
+    padding-top: 18px;
+  }
+  .buttons {
+    gap: 100px;
+    margin: 20px 0px;
+  }
+  .about-us h2 {
+    text-align: center;
+  }
+  .about-us p {
+    padding: 10px;
+  }
+  .memberships > article h4 {
+    font-size: 26px;
+  }
+  .memberships .our-activities h4 {
+    font-size: 42px;
+  }
+  .memberships .our-activities li {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin-left: 30%;
+    width: 70%;
+  }
+  .welcome {
+    min-height: 567px;
+  }
+  .welcome h2 {
+    font-size: 42px;
+  }
+  .welcome h3,
+  .welcome p {
+    font-size: 32px;
+  }
+  .welcome > img {
+    width: 267px;
+    height: auto;
+  }
+  .functions {
+    height: 1000px;
+  }
+  form {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  .form {
+    min-height: 766px;
+  }
+  .form h2 {
+    font-size: 60px;
+    font-weight: 100;
+  }
+  .form-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+  }
+  .form-right {
+    width: 50%;
+    display: flex;
+    min-height: 483px;
+    justify-content: flex-start;
+    gap: 42px;
+  }
+  textarea {
+    width: 497px;
+    height: 342px;
+    max-width: 90%;
+  }
+  .form input,
+  select,
+  option {
+    width: 393px;
+    height: 47px;
+    max-width: 90%;
+  }
+  .buttons {
+    justify-content: flex-start;
+    gap: 120px;
+  }
+  .buttons button {
+    width: 151px;
+    height: 70px;
+    font-size: 36px;
+    max-width: 30%;
+  }
+  .about-us {
+    font-size: 50px;
+    padding-left: 25px;
+    min-height: 670px;
+  }
+  .about-us h2 {
+    text-align: start;
+  }
+  .about-us p {
+    margin: 80px 40px;
+  }
+  .memberships > article {
+    width: 38%;
+  }
+  .memberships {
+    display: flex;
+    height: 627px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .memberships ul,
+  .memberships ol {
+    margin-left: 0;
+  }
+  .memberships > article li,
+  .memberships > article h4 {
+    font-size: 24px;
+  }
+  .memberships .our-activities h4,
+  .memberships .our-activities li {
+    font-size: 24px;
+  }
+  .memberships > article > h4 > img {
+    display: unset;
+  }
+  .memberships > article > h4 {
+    border: #34636e solid 1px;
+    align-self: flex-start;
+  }
+}

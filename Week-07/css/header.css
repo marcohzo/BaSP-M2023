@@ -1,0 +1,39 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header > img {
+  filter: brightness(0%) invert(100%);
+  width: 44px;
+  height: 37px;
+}
+.main-header > h1 {
+  width: 199px;
+  height: 42px;
+}
+
+@media (min-width: 601px) {
+  .main-header {
+    height: 169px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header {
+    width: 100%;
+  }
+  header {
+    height: 159px;
+  }
+  .main-header {
+    padding: 0px;
+    flex-direction: row-reverse;
+  }
+  .main-header > img {
+    display: none;
+  }
+  .main-header > h1 {
+    margin-right: 30px;
+  }
+}

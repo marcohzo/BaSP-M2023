@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Login</title>
+    <script src="../js/login.js" defer></script>
+    <!-- <script src="../js/test.js" defer></script> -->
+  </head>
+  <body>
+    <header class="bg-blue main-header">
+      <img src="../../assets/image/Icon.png" alt="navbar icon" />
+      <h1>
+        <a href="./index.html">
+          <img src="../../assets/image/logo.png" alt="MegaRocket" />
+        </a>
+      </h1>
+    </header>
+    <main>
+      <form id="myForm">
+        <a href="./index.html" class="back-btn-a">
+          <img src="../../assets/image/close.png" alt="back" class="back-btn" />
+        </a>
+        <h2>Sign in</h2>
+        <div class="form-control">
+          <input type="text" placeholder="Username" id="userName" />
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="form-control">
+          <input type="text" placeholder="Password" id="password" />
+          <i class="fas fa-lock"></i>
+        </div>
+        <div class="form-control">
+          <a href="#">Have you forgotten the password?</a>
+        </div>
+        <div class="form-control">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me?</label>
+        </div>
+        <div class="form-control">
+          <p>Don't have an account</p>
+          <a href="./sign-up.html">Click here to become a member</a>
+        </div>
+        <button type="submit" id="submit-btn">Login</button>
+      </form>
+    </main>
+  </body>
+</html>

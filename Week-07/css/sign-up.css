@@ -1,0 +1,91 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  width: 100%;
+  margin: 0;
+}
+main {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  color: #aace9b;
+  align-items: center;
+  width: 100%;
+}
+input {
+  background-color: #d9d9d9;
+  border: none;
+  width: 90%;
+  height: 43px;
+}
+h2 {
+  margin-bottom: 1rem;
+  align-self: center;
+}
+.section-form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-width: 24%;
+  padding: 3rem;
+  margin-top: 1rem;
+}
+.section-form h2 {
+  color: #2c8008;
+}
+.form-row {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.btn-form {
+  background-color: #aace9b;
+  width: 327px;
+  height: 48px;
+  color: #fff;
+  border: none;
+  margin-top: 2rem;
+}
+.error {
+  border: 1px solid red;
+}
+.error-message {
+  color: red;
+}
+.back-btn {
+  align-self: baseline;
+}
+@media (min-width: 1024px) {
+  form {
+    flex-direction: row;
+  }
+  input {
+    background-color: #d9d9d9;
+    border: none;
+    width: 228px;
+    height: 43px;
+  }
+  .form-row {
+    width: 50%;
+  }
+}
