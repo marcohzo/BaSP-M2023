@@ -58,6 +58,23 @@ In week 6, we learned how to create custom form validations using JavaScript met
 - Implementation of customized error messages for each form field.
 - We also learned how to create a responsive design for the form using media queries and flexbox to adapt to different screen sizes.
 
+## Week 7: Asynchronous Programming and Fetch API
+
+During week 7, we delved into the topic of asynchronous programming in JavaScript, including promises, async/await, and the Fetch API. We focused on using these techniques to make HTTP requests and handle the resulting data.
+
+Some of the key concepts we covered include:
+
+- Understanding asynchronous programming and the event loop
+- Working with promises and handling asynchronous data
+- Using the Fetch API to make HTTP requests and handle responses
+- Query parameters to send data with HTTP requests
+- Storing data in local storage
+- Using async/await to simplify asynchronous code and handle errors
+
+We put our newfound knowledge into practice by building a web application that retrieves data from an API using Fetch and query parameters, and then displays the data on the page. We also utilized local storage to store data for future use.
+
+Overall, this week was focused on understanding how to effectively work with asynchronous data and HTTP requests in JavaScript, and the various tools and techniques available to make this process simpler and more efficient.
+
 ## Author
 
 - Marco Herazo
