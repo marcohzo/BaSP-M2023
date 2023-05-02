@@ -1,8 +1,8 @@
-const form = document.getElementById("myForm");
-const submitBtn = document.getElementById("submit-btn");
-const emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-const emailInput = document.getElementById("userName");
-const passwordInput = document.getElementById("password");
+var form = document.getElementById("myForm");
+var submitBtn = document.getElementById("submit-btn");
+var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+var emailInput = document.getElementById("userName");
+var passwordInput = document.getElementById("password");
 passwordInput.setAttribute("type", "password");
 
 emailInput.addEventListener("blur", function () {
@@ -22,15 +22,15 @@ passwordInput.addEventListener("focus", function () {
 });
 
 function validateInput(input, validationType, errorMessage) {
-  const value = input.value.trim();
-  const errorElement = input.parentNode.querySelector(".error-message");
+  var value = input.value.trim();
+  var errorElement = input.parentNode.querySelector(".error-message");
 
   if (validationType === "email") {
     if (value === "" || !emailExpression.test(value)) {
       input.classList.add("error");
 
       if (!errorElement) {
-        const newErrorElement = document.createElement("p");
+        var newErrorElement = document.createElement("p");
         newErrorElement.classList.add("error-message");
         newErrorElement.textContent = errorMessage;
         input.parentNode.insertBefore(newErrorElement, input.nextSibling);
@@ -60,7 +60,7 @@ function validateInput(input, validationType, errorMessage) {
       input.classList.add("error");
 
       if (!errorElement) {
-        const newErrorElement = document.createElement("p");
+        var newErrorElement = document.createElement("p");
         newErrorElement.classList.add("error-message");
         newErrorElement.textContent = errorMessage;
         input.parentNode.insertBefore(newErrorElement, input.nextSibling);
@@ -72,7 +72,7 @@ function validateInput(input, validationType, errorMessage) {
 }
 
 function clearError(input) {
-  const errorElement = input.parentNode.querySelector(".error-message");
+  var errorElement = input.parentNode.querySelector(".error-message");
   if (errorElement) {
     input.classList.remove("error");
     errorElement.remove();
@@ -83,40 +83,18 @@ submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
   validateForm();
 });
+
 var loginBaseUrl = "https://api-rest-server.vercel.app/login";
+
 async function validateForm() {
-  const inputs = form.querySelectorAll("input");
-  var errors = [];
-  inputs.forEach(function (input) {
-    if (input.classList.contains("error") || input.value == "") {
-      errors.push(input.id);
-    }
-  });
-
-  if (errors.length > 0) {
-    alert(`The following fields have errors: ${errors.join(", ")}`);
-  } else {
-    alert(
-      `Email : ${emailInput.value.trim()}\nPassword: ${passwordInput.value.trim()}`
-    );
-    await fetch(
-      `${loginBaseUrl}?email=${emailInput.value.trim()}&password=${passwordInput.value.trim()}`
-    )
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        if (data.success) {
-          alert("Request has been successful!\n" + data.msg);
-        } else {
-          throw new Error("Request has been rejected :/ \n" + data.msg);
-        }
-      })
-      .catch(function (err) {
-        alert(err);
-      });
-  }
+  var response = await fetch(
+    `${loginBaseUrl}?email=${emailInput.value.trim()}&password=${passwordInput.value.trim()}`
+  );
+  var data = await response.json();
+  // We display on screen in an alert the error message(s) within data.errors.
+  !data.success
+    ? data.errors?.length > 0
+      ? data.errors.forEach((error) => alert(error.msg))
+      : alert(data.msg)
+    : alert("Login correcto");
 }
-// --- Week 07 ---
-
-var loginUrl = "https://api-rest-server.vercel.app/login";
