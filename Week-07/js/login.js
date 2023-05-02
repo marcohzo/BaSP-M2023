@@ -83,8 +83,8 @@ submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
   validateForm();
 });
-
-function validateForm() {
+var loginBaseUrl = "https://api-rest-server.vercel.app/login";
+async function validateForm() {
   const inputs = form.querySelectorAll("input");
   var errors = [];
   inputs.forEach(function (input) {
@@ -99,6 +99,24 @@ function validateForm() {
     alert(
       `Email : ${emailInput.value.trim()}\nPassword: ${passwordInput.value.trim()}`
     );
-    form.submit();
+    await fetch(
+      `${loginBaseUrl}?email=${emailInput.value.trim()}&password=${passwordInput.value.trim()}`
+    )
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        if (data.success) {
+          alert("Request has been successful!\n" + data.msg);
+        } else {
+          throw new Error("Request has been rejected :/ \n" + data.msg);
+        }
+      })
+      .catch(function (err) {
+        alert(err);
+      });
   }
 }
+// --- Week 07 ---
+
+var loginUrl = "https://api-rest-server.vercel.app/login";
